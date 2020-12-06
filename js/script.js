@@ -2,10 +2,10 @@ let order = [];
 let clickedOrder = [];
 let score = 0;
 
-const blue = document.querySelector('.blue');
-const red = document.querySelector('.red');
 const green = document.querySelector('.green');
+const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
+const blue = document.querySelector('.blue');
 
 let playGame = () => {
   document.getElementById("startBtn").disabled = 1;
@@ -13,6 +13,11 @@ let playGame = () => {
 
   nextLevel();
 }
+
+let greenSound=document.getElementById("greenBtn");
+let redSound=document.getElementById("redBtn");
+let yellowSound=document.getElementById("yellowBtn");
+let blueSound=document.getElementById("blueBtn");
 
 let shuffleOrder = () => {
   let colorOrder = Math.floor(Math.random() * 4);
@@ -43,7 +48,7 @@ let checkOrder = () => {
     }
   }
   if(clickedOrder.length == order.length) {
-    alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível!`);
+    alert(`Pontuação: ${score} \n Você acertou! Iniciando próximo nível!`);
     nextLevel();
   }
 }
@@ -77,7 +82,7 @@ let nextLevel = () => {
 
 let gameOver = () => {
   document.getElementById("startBtn").disabled = 0;
-  alert(`Você perdeu o jogo mas pontuou ${score}!\n`);
+  alert(`Você perdeu o jogo mas pontuou ${score}!`);
   order = [];
   score = 0;
 }
