@@ -19,6 +19,12 @@ let redSound=document.getElementById("redBtn");
 let yellowSound=document.getElementById("yellowBtn");
 let blueSound=document.getElementById("blueBtn");
 
+let nextLevel = () => {
+  score++;
+  scoreboardRefresh();
+  shuffleOrder();
+}
+
 let shuffleOrder = () => {
   let colorOrder = Math.floor(Math.random() * 4);
   order[order.length] = colorOrder;
@@ -48,7 +54,7 @@ let checkOrder = () => {
     }
   }
   if(clickedOrder.length == order.length) {
-    alert(`Pontuação: ${score} \n Você acertou! Iniciando próximo nível!`);
+    alert(`Você acertou! Pressione o OK para iniciar o próximo nível!`);
     nextLevel();
   }
 }
@@ -75,14 +81,13 @@ let createColorElement = (color) => {
   }
 }
 
-let nextLevel = () => {
-  score++;
-  shuffleOrder();
+let scoreboardRefresh = () => {
+  document.getElementById("score").innerHTML = score;
 }
 
 let gameOver = () => {
   document.getElementById("startBtn").disabled = 0;
-  alert(`Você perdeu o jogo mas pontuou ${score}!`);
+  alert(`Você errou, Vamos tentar outra vez!`);
   order = [];
   score = 0;
 }

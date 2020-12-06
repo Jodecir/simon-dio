@@ -61,30 +61,59 @@ body {
   height: 500px;
 }
 
-.blue {
-  grid-area: azul;
-  background-color: blue;
-  border-bottom-right-radius: 100%;
+.green {
+  grid-area: verde;
+  background-color: green;
+  border-top-left-radius: 100%;
+  cursor: pointer;
 }
 
 .red {
   grid-area: vermelho;
   background-color: red;
   border-top-right-radius: 100%;
+  cursor: pointer;
 }
 
 .yellow {
   grid-area: amarelo;
   background-color: yellow;
   border-bottom-left-radius: 100%;
+  cursor: pointer;
 }
 
-.green {
-  grid-area: verde;
-  background-color: green;
-  border-top-left-radius: 100%;
+.blue {
+  grid-area: azul;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  cursor: pointer;
 }
 
 .selected {
   opacity: 0.4;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.hud {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.scoreboard {
+  font-size: 15px;
 }
