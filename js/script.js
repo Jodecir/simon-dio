@@ -7,6 +7,13 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
 
+let playGame = () => {
+  document.getElementById("startBtn").disabled = 1;
+  score = 0;
+
+  nextLevel();
+}
+
 let shuffleOrder = () => {
   let colorOrder = Math.floor(Math.random() * 4);
   order[order.length] = colorOrder;
@@ -69,23 +76,13 @@ let nextLevel = () => {
 }
 
 let gameOver = () => {
-  alert(`Pontuação: ${score}!\n Você perdeu o jogo!\n Clique em OK para iniciar um novo jogo`);
+  document.getElementById("startBtn").disabled = 0;
+  alert(`Você perdeu o jogo mas pontuou ${score}!\n`);
   order = [];
-  clickedOrder = [];
-
-  playGame();
-}
-
-let playGame = () => {
-  alert('Iniciando novo jogo!');
   score = 0;
-
-  nextLevel();
 }
 
 green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
-
-playGame();

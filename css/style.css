@@ -22,7 +22,7 @@ body {
   transform: translate(-50%, -50%); 
 }
 
-#resetBtn {
+#startBtn {
   border-radius: 50%;
   border: 15px solid #000;
   height: 150px;
@@ -36,7 +36,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#resetBtn:hover {
+#startBtn:hover {
   color: #000fef;
   cursor: pointer;
 }
