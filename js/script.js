@@ -13,31 +13,31 @@ let shuffleOrder = () => {
   clickedOrder = [];
 
   for(let i in order) {
-    let elementColor = createElement(order[i]);
-    lightColor(elementColor, Number[i] + 1);
+    let elementColor = createColorElement(order[i]);
+    lightColor(elementColor, Number(i) + 1);
   }
 }
 
 let lightColor = (element, number) => {
-  number = number * 500;
+  number *= 500;
   setTimeout(() => {
     element.classList.add('selected');
   }, number - 250);
   setTimeout(() => {
     element.classList.remove('selected');
-  });
+  }, number);
 }
 
 let checkOrder = () => {
   for(let i in clickedOrder) {
-    if(clickedOrder[i] != order[i]){
+    if(clickedOrder[i] != order[i]) {
       gameOver();
       break;
     }
   }
   if(clickedOrder.length == order.length) {
-    alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível!`)
-    nextlevel();
+    alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível!`);
+    nextLevel();
   }
 }
 
