@@ -110,6 +110,10 @@ body {
   cursor: pointer;
 }
 
+.red:hover, .blue:hover, .yellow:hover, .green:hover {
+	transform: scale(1.05);
+}
+
 .selected {
   opacity: 0.4;
 }
