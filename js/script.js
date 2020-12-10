@@ -70,7 +70,7 @@ let click = (color) => {
 
 let createColorElement = (color) => {
   if(color == 0) {
-      return green;
+    return green;
   } else if(color == 1) {
       return red;
   } else if (color == 2) {
@@ -82,15 +82,6 @@ let createColorElement = (color) => {
 
 let scoreboardRefresh = () => {
   document.getElementById("score").innerHTML = score;
-}
-
-function showWarn(warning) {
-  const warnEl = document.createElement("h1");
-  warnEl.className = "game-over";
-  warnEl.innerText = warning;
-
-  background.appendChild(warnEl);
-  background.style.webkitAnimationPlayState = "paused";
 }
 
 let gameOver = () => {
