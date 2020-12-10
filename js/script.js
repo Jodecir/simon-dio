@@ -54,7 +54,6 @@ let checkOrder = () => {
     }
   }
   if(clickedOrder.length == order.length) {
-    alert(`Você acertou! Pressione o OK para iniciar o próximo nível!`);
     nextLevel();
   }
 }
@@ -83,6 +82,15 @@ let createColorElement = (color) => {
 
 let scoreboardRefresh = () => {
   document.getElementById("score").innerHTML = score;
+}
+
+function showWarn(warning) {
+  const warnEl = document.createElement("h1");
+  warnEl.className = "game-over";
+  warnEl.innerText = warning;
+
+  background.appendChild(warnEl);
+  background.style.webkitAnimationPlayState = "paused";
 }
 
 let gameOver = () => {
