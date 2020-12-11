@@ -1,6 +1,6 @@
 # Descrição do Exercício
 
-#### Repositório da aula de JS ensinada na plataforma da Digital Innovation One, cujo desafio era criar um jogo Genius, um dos desafios do Bootcamp da DIO.
+Repositório da aula de JS ensinada na plataforma da Digital Innovation One, cujo desafio era criar um jogo Genius, um dos desafios do Bootcamp da DIO.
 
 ## Bootcamp
 
@@ -27,10 +27,11 @@
 
 ### Recursos CSS:
 
+* [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+* [:root](https://www.w3schools.com/cssref/sel_root.asp)
 * [:hover](https://www.w3schools.com/cssref/sel_hover.asp)
 * [transition](https://www.w3schools.com/css/css3_transitions.asp)
 * [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp)
-* [:root](https://www.w3schools.com/cssref/sel_root.asp)
 
 #### Contatos:
 
