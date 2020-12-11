@@ -32,6 +32,7 @@ Repositório da aula de JS ensinada na plataforma da Digital Innovation One, cuj
 * [:hover](https://www.w3schools.com/cssref/sel_hover.asp)
 * [transition](https://www.w3schools.com/css/css3_transitions.asp)
 * [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp)
+* [:checked](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked)
 
 #### Contatos:
 
