@@ -10,6 +10,7 @@
   --azul: #0000ff;
   --branco: #ffffff;
   --preto: #000000;
+  --cinza: #6e6e6e;
   --azulPastel: #aec6cf;
 }
 
@@ -20,6 +21,7 @@
   --azul: #0000ffcc;
   --branco: #000000;
   --preto: #ffffff;
+  --cinza: #aec6cf;
   --azulPastel: #6e6e6e;
 }
 
@@ -66,7 +68,7 @@ body {
 }
 
 #startBtn:hover {
-  color: var(--azulPastel);
+  color: var(--cinza);
   cursor: pointer;
 }
 
