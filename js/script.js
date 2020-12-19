@@ -1,11 +1,16 @@
-let order = [];
-let clickedOrder = [];
-let score = 0;
-
 const green = document.querySelector('.green');
 const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
 const blue = document.querySelector('.blue');
+
+let order = [];
+let clickedOrder = [];
+let score = 0;
+
+let greenSound=document.getElementById("greenBtn");
+let redSound=document.getElementById("redBtn");
+let yellowSound=document.getElementById("yellowBtn");
+let blueSound=document.getElementById("blueBtn");
 
 let playGame = () => {
   document.getElementById("startBtn").disabled = 1;
@@ -13,11 +18,6 @@ let playGame = () => {
 
   nextLevel();
 }
-
-let greenSound=document.getElementById("greenBtn");
-let redSound=document.getElementById("redBtn");
-let yellowSound=document.getElementById("yellowBtn");
-let blueSound=document.getElementById("blueBtn");
 
 let nextLevel = () => {
   score++;
